@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<title>	
+			Even Odd App
+		</title>
+		<style>
+			*{
+				font-size:50px;
+				text-align:center;	
+				font-family:Cambria;
+			}
+			body{
+				background-color:linen;
+			}
+			.fc{
+				border:solid;
+				padding:2%;
+				width:60%;
+				margin:auto;
+				border-radius:30px;
+			}
+		</style>
+	</head>
+	<body>	
+		<h1>Even Odd App</h1>
+		<div class="fc">
+			<form method="POST">
+				<input type = "number"
+					name="num"
+					placeholder="Enter Integer"
+					required
+				/>
+				<br/><br/>
+				<input type = "submit"
+					value="Check Even/Odd"/>	
+			</form>	
+		</div>
+		<h2>{{ msg }}</h2>
+	</body>
+</html>
