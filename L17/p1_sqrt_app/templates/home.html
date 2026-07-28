@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>
+			SquareRoot App
+		</title>
+		<style>
+			*{
+				font-size:40px;
+				text-align:center;
+			}
+			body{
+				background-color:azure;
+			}
+			.fc{
+				border:solid;
+				padding:2%;
+				width:60%;
+				margin:auto;
+				border-radius:40px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>SquareRoot App</h1>
+		<div class="fc">
+			<form method="POST">
+				<input type="number"
+					step="any"
+					name="num"
+					placeholder="Enter Number"
+					required/>
+				<br/><br/>
+				<input type="submit"
+					values="Find Square Root"/>
+			</form>
+		</div>
+		<h2>
+			{{ msg }}
+		</h2>
+	<body>
+</html>
