@@ -1,0 +1,67 @@
+<html>
+	<head>
+		<title>
+			Profile App
+		</title>
+		<style>
+			*{
+				font-size: 30px;
+				text-align:center;
+				font-family:Cambria;
+			}
+			body{
+				background-color:linen;
+			}
+			.fc{
+				border:solid;
+				padding:2%;
+				width:50%;
+				margin:auto;
+				border-radius:30px;
+				background-color:white;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Fill the Form</h1>
+		<div class="fc">
+			<form method="POST">
+				<input type="text"
+					name="name"
+					placeholder="Enter Name"
+					required/>
+				<br/><br/>
+				<input type="number"
+					name="phone"
+					placeholder="Enter Phone"
+					required/>
+				<br/><br/>
+				<label>Select One</label><br/>
+				<input type="radio"
+					name="gender"
+					value="male"
+					checked=True
+					/>Male
+				<input type="radio"
+					name="gender"
+					value="female"
+					/>female
+				<br/><br/>
+				<label>Select Languages</label><br/>
+				<input type="checkbox"
+					name="py"
+					/>Python
+				<input type="checkbox"
+					name="ja"
+					/>Java
+				<input type="checkbox"
+					name="js"
+					/>JavaScript
+				<br/><br/>
+				<input type="submit"/>
+			</form>
+		</div>
+		<h2>{{ msg }}</h2>
+		
+	</body>
+</html>
