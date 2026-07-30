@@ -1,0 +1,68 @@
+<html>
+	<head>
+		<title>
+			 CarPricer AI
+		</title>
+		<style>
+			*{
+				text-align:center;
+				font-family:Cambria;
+				font-size:25px;
+				background-color:pink;
+			}
+			.fc{
+				border:solid;
+				padding:2%;
+				width:40%;
+				margin:auto;
+				border-radius:40px;
+					
+			}
+
+		</style>
+	</head>
+	<body>
+		<br/>
+		<h1>CarPricer AI</h1>
+		<h3>Fill the  details..</h3>
+		<div class="fc">
+			<form method="POST">
+				<label> Car used years </label>
+				<input type = "number"
+					placeholder ="Enter no of years car used"
+					name="age"
+					min="1"
+					max="10"
+					required/>
+				<br/><br/>
+				<label>Car Drived</label>
+				<input type = "number"
+					placeholder ="Enter Car Drived in kms"
+					name="kms"
+					min="1000"
+					max="100000"
+					required/>
+		
+				<br/><br/>
+				<label>Car Brand </label>
+				<input type = "radio"
+					name="name"
+					value ="2"
+					checked
+				/>Maruti
+				<input type = "radio"
+					name="name"
+					value ="1"
+				/>Mahendra
+				<input type = "radio"
+					name="name"
+					value ="3"
+				/>Tata
+				<br/><br/>
+				<input type="Submit"
+					value="Predict Price">
+			</form>
+		</div>
+		<h2>{{ msg }}</h2>
+	</body>
+</html>
