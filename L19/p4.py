@@ -12,6 +12,7 @@ print(data)
 print(data.isnull().sum())
 print(data.info())
 
+
 #features and target
 features = data.drop("price",axis="columns")
 target = data["price"]

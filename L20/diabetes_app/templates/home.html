@@ -1,0 +1,108 @@
+<html>
+	<head>
+		<title>
+			 Diabetes Classifier App
+		</title>
+		<style>
+			*{
+				text-align:center;
+				font-family:Cambria;
+				font-size:25px;
+				background-color:#FFCCFF;
+			}
+			.fc{
+				border:solid;
+				padding:2%;
+				width:45%;
+				margin:auto;
+				border-radius:40px;
+					
+			}
+		</style>
+	</head>
+	<body>
+		<br/>
+		<h1>Diabetes Classifier App</h1>
+		<h3>Fill the  Form</h3>
+		<div class="fc">
+			<form method="POST">
+				<label>Age</label>
+				<input type = "number"
+					step="0.1"
+					placeholder ="Enter Age"
+					name="age"
+					min="1"
+					max="120"
+					style="width:500px"
+					required/>
+				<br/><br/>
+				<label>BMI</label>
+				<input type = "number"
+					step="0.1"
+					placeholder ="Enter BMI"
+					name="bmi"
+					min="0"
+					max="50"
+					style="width:500px"
+					required/>
+				<br/><br/>
+				<label>Fasting Sugar</label>
+				<input type = "number"
+					step="0.1"
+					name="fs"
+					placeholder ="Enter Fasting Sugar"
+					min="0"
+					max="300"
+					style="width:500px"
+					required/>
+				<br/><br/>
+				<label>HbA1c</label>
+				<input type = "number"
+					step="0.1"
+					name="hb"
+					placeholder ="Enter HbA1c"
+					min="0"
+					max="100"
+					style="width:500px"
+					required/>
+				<label>Select Gender</label>
+				<input type = "radio"
+					name="ge"
+					value ="1"
+					checked=true
+				/>Female
+				<input type = "radio"
+					name="ge"
+					value ="2"
+				/>Male
+				<br/><br/>
+				<label>Do u have HyperTension</label>
+				<br/>
+				<input type = "radio"
+					name="ht"
+					value ="1"
+					checked=true
+				/>No
+				<input type = "radio"
+					name="ht"
+					value ="2"
+				/>Yes
+				<br/><br/>
+				<label>Family History</label>
+				<br/>
+				<input type = "radio"
+					name="fh"
+					value ="1"
+					checked=true
+				/>No
+				<input type = "radio"
+					name="fh"
+					value ="2"
+				/>Yes
+				<br/><br/>
+				<input type="Submit"/>
+			</form>
+		</div>
+		<h2>{{ msg }}</h2>
+	</body>
+</html>
